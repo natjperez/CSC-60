@@ -1,0 +1,22 @@
+Script started on Wed 13 Oct 2021 07:45:41 PM PDT
+]0;njperez@ecs-pa-coding1:~/csc60/lab4[?1034h[njperez@ecs-pa-coding1 lab4]$ gcc lab4.c
+]0;njperez@ecs-pa-coding1:~/csc60/lab4[njperez@ecs-pa-coding1 lab4]$ ./a.out
+]0;njperez@ecs-pa-coding1:~/csc60/lab4[njperez@ecs-pa-coding1 lab4]$ cat lab4.txt
+
+Natalia Perez.  Lab 4. 
+
+Area of Trapezoid 
+
+ Height      Side1       Side2         Area   
+--------   ---------   ---------   ---------- 
+   6.40      12.60       20.80       106.880
+   4.00       5.60        7.80        26.800
+   5.20       5.60        7.80        34.840
+   6.20       7.85       12.61        63.426
+   4.60       8.90        4.70        31.280
+
+
+]0;njperez@ecs-pa-coding1:~/csc60/lab4[njperez@ecs-pa-coding1 lab4]$ exit
+exit
+
+Script done on Wed 13 Oct 2021 07:46:22 PM PDT
