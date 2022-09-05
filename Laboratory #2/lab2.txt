@@ -1,0 +1,187 @@
+Script started on Sat 02 Oct 2021 05:53:55 PM PDT
+]0;njperez@ecs-pa-coding1:~[?1034h[njperez@ecs-pa-coding1 ~]$ history -c
+]0;njperez@ecs-pa-coding1:~[njperez@ecs-pa-coding1 ~]$ cd csc60
+]0;njperez@ecs-pa-coding1:~/csc60[njperez@ecs-pa-coding1 csc60]$ mkdir lab2
+mkdir: cannot create directory ‘lab2’: File exists
+]0;njperez@ecs-pa-coding1:~/csc60[njperez@ecs-pa-coding1 csc60]$ cd lab2
+]0;njperez@ecs-pa-coding1:~/csc60/lab2[njperez@ecs-pa-coding1 lab2]$ pwd
+/home/student/njperez/csc60/lab2
+]0;njperez@ecs-pa-coding1:~/csc60/lab2[njperez@ecs-pa-coding1 lab2]$ mkdir aaa
+mkdir: cannot create directory ‘aaa’: File exists
+]0;njperez@ecs-pa-coding1:~/csc60/lab2[njperez@ecs-pa-coding1 lab2]$ cd aaa
+]0;njperez@ecs-pa-coding1:~/csc60/lab2/aaa[njperez@ecs-pa-coding1 aaa]$ pwd
+/home/student/njperez/csc60/lab2/aaa
+]0;njperez@ecs-pa-coding1:~/csc60/lab2/aaa[njperez@ecs-pa-coding1 aaa]$ cd ..
+]0;njperez@ecs-pa-coding1:~/csc60/lab2[njperez@ecs-pa-coding1 lab2]$ pwd
+/home/student/njperez/csc60/lab2
+]0;njperez@ecs-pa-coding1:~/csc60/lab2[njperez@ecs-pa-coding1 lab2]$ ls > file1
+]0;njperez@ecs-pa-coding1:~/csc60/lab2[njperez@ecs-pa-coding1 lab2]$ cat file1
+aaa
+file1
+]0;njperez@ecs-pa-coding1:~/csc60/lab2[njperez@ecs-pa-coding1 lab2]$ less file1
+[?1049h[?1h=
+aaa
+file1
+[7mfile1 (END)[27m[K
+[K[?1l>[?1049l]0;njperez@ecs-pa-coding1:~/csc60/lab2[njperez@ecs-pa-coding1 lab2]$ file *
+aaa:   directory
+file1: ASCII text
+]0;njperez@ecs-pa-coding1:~/csc60/lab2[njperez@ecs-pa-coding1 lab2]$ wc file1
+ 2  2 10 file1
+]0;njperez@ecs-pa-coding1:~/csc60/lab2[njperez@ecs-pa-coding1 lab2]$ wc *
+wc: aaa: Is a directory
+      0       0       0 aaa
+      2       2      10 file1
+      2       2      10 total
+]0;njperez@ecs-pa-coding1:~/csc60/lab2[njperez@ecs-pa-coding1 lab2]$ grep lab file1
+]0;njperez@ecs-pa-coding1:~/csc60/lab2[njperez@ecs-pa-coding1 lab2]$ cp file1 file2
+]0;njperez@ecs-pa-coding1:~/csc60/lab2[njperez@ecs-pa-coding1 lab2]$ ls
+[0m[01;34maaa[0m  file1  file2
+]0;njperez@ecs-pa-coding1:~/csc60/lab2[njperez@ecs-pa-coding1 lab2]$ cd aaa
+]0;njperez@ecs-pa-coding1:~/csc60/lab2/aaa[njperez@ecs-pa-coding1 aaa]$ cp ../file1
+cp: missing destination file operand after ‘../file1’
+Try 'cp --help' for more information.
+]0;njperez@ecs-pa-coding1:~/csc60/lab2/aaa[njperez@ecs-pa-coding1 aaa]$ cp ..file/[K[K[K[K[K/file1 .
+]0;njperez@ecs-pa-coding1:~/csc60/lab2/aaa[njperez@ecs-pa-coding1 aaa]$ ls
+file1
+]0;njperez@ecs-pa-coding1:~/csc60/lab2/aaa[njperez@ecs-pa-coding1 aaa]$ mv file1 file2
+]0;njperez@ecs-pa-coding1:~/csc60/lab2/aaa[njperez@ecs-pa-coding1 aaa]$ ls
+file2
+]0;njperez@ecs-pa-coding1:~/csc60/lab2/aaa[njperez@ecs-pa-coding1 aaa]$ mv ../file1 .
+]0;njperez@ecs-pa-coding1:~/csc60/lab2/aaa[njperez@ecs-pa-coding1 aaa]$ cd ..
+]0;njperez@ecs-pa-coding1:~/csc60/lab2[njperez@ecs-pa-coding1 lab2]$ ls
+[0m[01;34maaa[0m  file2
+]0;njperez@ecs-pa-coding1:~/csc60/lab2[njperez@ecs-pa-coding1 lab2]$ cd aaa
+]0;njperez@ecs-pa-coding1:~/csc60/lab2/aaa[njperez@ecs-pa-coding1 aaa]$ ls
+file1  file2
+]0;njperez@ecs-pa-coding1:~/csc60/lab2/aaa[njperez@ecs-pa-coding1 aaa]$ cmp file1 file2
+]0;njperez@ecs-pa-coding1:~/csc60/lab2/aaa[njperez@ecs-pa-coding1 aaa]$ ls > aaalist
+]0;njperez@ecs-pa-coding1:~/csc60/lab2/aaa[njperez@ecs-pa-coding1 aaa]$ cmp file1 aaalist
+file1 aaalist differ: byte 4, line 1
+]0;njperez@ecs-pa-coding1:~/csc60/lab2/aaa[njperez@ecs-pa-coding1 aaa]$ diff file1 aaalist
+1c1
+< aaa
+---
+> aaalist
+2a3
+> file2
+]0;njperez@ecs-pa-coding1:~/csc60/lab2/aaa[njperez@ecs-pa-coding1 aaa]$ rm -i file1
+rm: remove regular file ‘file1’? ls
+]0;njperez@ecs-pa-coding1:~/csc60/lab2/aaa[njperez@ecs-pa-coding1 aaa]$ ps u
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+njperez   4102  0.0  0.0 126252  2124 pts/0    Ss   17:50   0:00 -bash
+njperez   4413  0.0  0.0 114296   832 pts/0    S+   17:53   0:00 script NataliaPerez_lab2.txt
+njperez   4415  0.0  0.0 114304   392 pts/0    S+   17:53   0:00 script NataliaPerez_lab2.txt
+njperez   4416  0.0  0.0 126252  2128 pts/1    Ss   17:53   0:00 bash -i
+njperez   5063  0.0  0.0 166156  1944 pts/1    R+   18:03   0:00 ps u
+]0;njperez@ecs-pa-coding1:~/csc60/lab2/aaa[njperez@ecs-pa-coding1 aaa]$ ps -l
+F S   UID   PID  PPID  C PRI  NI ADDR SZ WCHAN  TTY          TIME CMD
+0 S 85101145 4416 4415  0 80   0 - 31563 do_wai pts/1    00:00:00 bash
+0 R 85101145 5079 4416  0 80   0 - 38332 -      pts/1    00:00:00 ps
+]0;njperez@ecs-pa-coding1:~/csc60/lab2/aaa[njperez@ecs-pa-coding1 aaa]$ !!
+ps -l
+F S   UID   PID  PPID  C PRI  NI ADDR SZ WCHAN  TTY          TIME CMD
+0 S 85101145 4416 4415  0 80   0 - 31563 do_wai pts/1    00:00:00 bash
+0 R 85101145 5089 4416  0 80   0 - 38332 -      pts/1    00:00:00 ps
+]0;njperez@ecs-pa-coding1:~/csc60/lab2/aaa[njperez@ecs-pa-coding1 aaa]$ cd ../..
+]0;njperez@ecs-pa-coding1:~/csc60[njperez@ecs-pa-coding1 csc60]$ pwd
+/home/student/njperez/csc60
+]0;njperez@ecs-pa-coding1:~/csc60[njperez@ecs-pa-coding1 csc60]$ cd lab1
+]0;njperez@ecs-pa-coding1:~/csc60/lab1[njperez@ecs-pa-coding1 lab1]$ head lab1.c
+/*--------------------*/
+/* Natalia Perez      */
+/* Lab 1              */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void)
+{
+    printf("\nLab 1.\n\n");
+]0;njperez@ecs-pa-coding1:~/csc60/lab1[njperez@ecs-pa-coding1 lab1]$ head -20 lab1.c
+/*--------------------*/
+/* Natalia Perez      */
+/* Lab 1              */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void)
+{
+    printf("\nLab 1.\n\n");
+    printf("Hello World.\n");
+    printf("Hi, Natalia Perez.\n\n");    
+    printf("See, the reason is, human nature was once originally one. And we were whole. And the desire and the pursuit of the whole...is called love.\n- Micah (IO)\n\n");
+
+    return EXIT_SUCCESS;      
+}
+/*--------------------*/
+]0;njperez@ecs-pa-coding1:~/csc60/lab1[njperez@ecs-pa-coding1 lab1]$ q[Ktail lab1.c
+int main(void)
+{
+    printf("\nLab 1.\n\n");
+    printf("Hello World.\n");
+    printf("Hi, Natalia Perez.\n\n");    
+    printf("See, the reason is, human nature was once originally one. And we were whole. And the desire and the pursuit of the whole...is called love.\n- Micah (IO)\n\n");
+
+    return EXIT_SUCCESS;      
+}
+/*--------------------*/
+]0;njperez@ecs-pa-coding1:~/csc60/lab1[njperez@ecs-pa-coding1 lab1]$ ls -al | less
+[?1049h[?1h=
+total 28
+drwxr-xr-x 2 njperez domain users 4096 Sep 27 10:25 .
+drwxr-xr-x 4 njperez domain users 4096 Oct  2 17:51 ..
+-rwxr-xr-x 1 njperez domain users 8360 Sep 27 10:25 a.out
+-rw-r--r-- 1 njperez domain users  464 Sep 27 10:23 lab1.c
+-rw-r--r-- 1 njperez domain users  556 Sep 27 10:26 NataliaPerez_lab1.txt
+[7m(END)[27m[K
+[K[?1l>[?1049l]0;njperez@ecs-pa-coding1:~/csc60/lab1[njperez@ecs-pa-coding1 lab1]$ history
+    1  2021-10-02 17:54:23 cd csc60
+    2  2021-10-02 17:54:40 mkdir lab2
+    3  2021-10-02 17:55:04 cd lab2
+    4  2021-10-02 17:55:15 pwd
+    5  2021-10-02 17:55:22 mkdir aaa
+    6  2021-10-02 17:55:30 cd aaa
+    7  2021-10-02 17:55:40 pwd
+    8  2021-10-02 17:55:48 cd ..
+    9  2021-10-02 17:56:01 pwd
+   10  2021-10-02 17:56:28 ls > file1
+   11  2021-10-02 17:56:44 cat file1
+   12  2021-10-02 17:57:12 less file1
+   13  2021-10-02 17:58:12 file *
+   14  2021-10-02 17:58:23 wc file1
+   15  2021-10-02 17:58:34 wc *
+   16  2021-10-02 17:58:51 grep lab file1
+   17  2021-10-02 17:59:10 cp file1 file2
+   18  2021-10-02 17:59:20 ls
+   19  2021-10-02 17:59:30 cd aaa
+   20  2021-10-02 17:59:46 cp ../file1
+   21  2021-10-02 18:00:11 cp ../file1 .
+   22  2021-10-02 18:00:24 ls
+   23  2021-10-02 18:00:34 mv file1 file2
+   24  2021-10-02 18:00:42 ls
+   25  2021-10-02 18:00:53 mv ../file1 .
+   26  2021-10-02 18:01:01 cd ..
+   27  2021-10-02 18:01:09 ls
+   28  2021-10-02 18:01:17 cd aaa
+   29  2021-10-02 18:01:23 ls
+   30  2021-10-02 18:01:38 cmp file1 file2
+   31  2021-10-02 18:01:51 ls > aaalist
+   32  2021-10-02 18:02:05 cmp file1 aaalist
+   33  2021-10-02 18:02:20 diff file1 aaalist
+   34  2021-10-02 18:02:37 rm -i file1
+   35  2021-10-02 18:03:01 ps u
+   36  2021-10-02 18:03:15 ps -l
+   37  2021-10-02 18:03:49 cd ../..
+   38  2021-10-02 18:03:57 pwd
+   39  2021-10-02 18:04:08 cd lab1
+   40  2021-10-02 18:04:45 head lab1.c
+   41  2021-10-02 18:05:03 head -20 lab1.c
+   42  2021-10-02 18:05:38 tail lab1.c
+   43  2021-10-02 18:06:12 ls -al | less
+   44  2021-10-02 18:06:30 history
+]0;njperez@ecs-pa-coding1:~/csc60/lab1[njperez@ecs-pa-coding1 lab1]$ exit
+exit
+
+Script done on Sat 02 Oct 2021 06:06:41 PM PDT
