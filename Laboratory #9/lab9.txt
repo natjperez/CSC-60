@@ -1,0 +1,55 @@
+Script started on Mon 29 Nov 2021 02:51:48 PM PST
+]0;njperez@ecs-pa-coding2:~/csc60/lab9[?1034h[njperez@ecs-pa-coding2 lab9]$ touch lab9_10.h
+]0;njperez@ecs-pa-coding2:~/csc60/lab9[njperez@ecs-pa-coding2 lab9]$ make
+gcc -c lab9.c -Wall
+gcc -c ParseCmd.c -Wall
+gcc lab9.o ParseCmd.o -o lab9 -Wall
+]0;njperez@ecs-pa-coding2:~/csc60/lab9[njperez@ecs-pa-coding2 lab9]$ ./lab9
+
+csc60msh]$ 
+Argc = 0 
+
+csc60msh]$  
+Argc = 0 
+
+csc60msh]$ pwd
+Argc = 1 
+Argv 0 = pwd 
+/home/student/njperez/csc60/lab9
+
+csc60msh]$ cd ..
+Argc = 2 
+Argv 0 = cd 
+Argv 1 = .. 
+
+csc60msh]$ pwd
+Argc = 1 
+Argv 0 = pwd 
+/home/student/njperez/csc60
+
+csc60msh]$ cd lab9
+Argc = 2 
+Argv 0 = cd 
+Argv 1 = lab9 
+
+csc60msh]$ pwd
+Argc = 1 
+Argv 0 = pwd 
+/home/student/njperez/csc60/lab9
+
+csc60msh]$ cd
+Argc = 1 
+Argv 0 = cd 
+
+csc60msh]$ pwd
+Argc = 1 
+Argv 0 = pwd 
+/home/student/njperez
+
+csc60msh]$ exit
+Argc = 1 
+Argv 0 = exit 
+]0;njperez@ecs-pa-coding2:~/csc60/lab9[njperez@ecs-pa-coding2 lab9]$ exit
+exit
+
+Script done on Mon 29 Nov 2021 02:53:27 PM PST
