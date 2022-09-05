@@ -1,0 +1,34 @@
+Script started on Tue 23 Nov 2021 07:19:20 PM PST
+]0;njperez@ecs-pa-coding1:~/csc60/lab7[?1034h[njperez@ecs-pa-coding1 lab7]$ touch lab7.h
+]0;njperez@ecs-pa-coding1:~/csc60/lab7[njperez@ecs-pa-coding1 lab7]$ make
+make: Warning: File `lab7.h' has modification time 5.5 s in the future
+gcc -c lab7.c -lm
+gcc -c get_data.c -lm
+gcc -c open_out_file.c -lm
+gcc -c print_all.c -lm
+gcc -c get_stats.c -lm
+gcc lab7.o get_data.o open_out_file.o print_all.o get_stats.o -o lab7 -lm
+make: warning:  Clock skew detected.  Your build may be incomplete.
+]0;njperez@ecs-pa-coding1:~/csc60/lab7[njperez@ecs-pa-coding1 lab7]$ ./lab7
+]0;njperez@ecs-pa-coding1:~/csc60/lab7[njperez@ecs-pa-coding1 lab7]$ cat lab7.txt
+
+Natalia Perez, Lab 7 output. 
+
+Track Results
+
+Name               Try 1   Try 2   Try 3   Try 4  Best throw  Deviation
+----------------   -----   -----   -----   -----  ---------   ---------
+Dani Potato        67.37   66.60   71.70   67.27     71.70       0.00   
+Jane Smith         50.51   62.23   69.25   67.54     69.25       2.45   
+Kelsey Tan         61.97   67.04   61.17   67.95     67.95       3.75   
+Christine Forest   68.17   59.83   69.12   68.19     69.12       2.58   
+
+
+Best Throw Average  =  69.50 meters 
+
+Winning Throw       =  71.70 meters
+
+]0;njperez@ecs-pa-coding1:~/csc60/lab7[njperez@ecs-pa-coding1 lab7]$ exit
+exit
+
+Script done on Tue 23 Nov 2021 07:20:44 PM PST
