@@ -1,0 +1,52 @@
+Script started on Wed 03 Nov 2021 10:37:36 AM PDT
+]0;njperez@ecs-pa-coding1:~/csc60/lab5[?1034h[njperez@ecs-pa-coding1 lab5]$ touch lab5.h
+]0;njperez@ecs-pa-coding1:~/csc60/lab5[njperez@ecs-pa-coding1 lab5]$ make
+make: Warning: File `lab5.h' has modification time 1.6 s in the future
+gcc -c lab5.c
+gcc -c class_stats.c
+gcc lab5.o class_stats.o -o lab5
+make: warning:  Clock skew detected.  Your build may be incomplete.
+]0;njperez@ecs-pa-coding1:~/csc60/lab5[njperez@ecs-pa-coding1 lab5]$ ./lab5
+
+
+Natalia Perez.  Lab 5. 
+
+Stats for lab5a.dat:  
+
+   Average grade = 85.620690 
+
+   Grade Distribution:  
+      Category 100 -  0 
+      Category  90 - 14 
+      Category  80 -  8 
+      Category  70 -  6 
+      Category  60 -  0 
+      Category  50 -  0 
+      Category  40 -  1 
+      Category  30 -  0 
+      Category  20 -  0 
+      Category  10 -  0 
+      Category   0 -  0 
+
+
+Stats for lab5b.dat:  
+
+   Average grade = 85.793103 
+
+   Grade Distribution:  
+      Category 100 -  2 
+      Category  90 - 11 
+      Category  80 -  7 
+      Category  70 -  7 
+      Category  60 -  1 
+      Category  50 -  1 
+      Category  40 -  0 
+      Category  30 -  0 
+      Category  20 -  0 
+      Category  10 -  0 
+      Category   0 -  0 
+
+]0;njperez@ecs-pa-coding1:~/csc60/lab5[njperez@ecs-pa-coding1 lab5]$ exit
+exit
+
+Script done on Wed 03 Nov 2021 10:38:21 AM PDT
